@@ -8,7 +8,7 @@ sudo: required
 before_install:
   - wget https://releases.hashicorp.com/consul-template/0.18.1/consul-template_0.18.1_linux_amd64.zip -O ctmpl.zip
   - unzip ctmpl.zip
-  - sudo chmod a+x /tmp/consul-template
+  - sudo chmod a+x consul-template
 
 script:
   - /tmp/consul-template -consul-addr=52.14.96.95:8500 -template=test.ctmpl -dry -once
