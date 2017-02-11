@@ -1,0 +1,2 @@
+{{range nodes}}{{$a := .Node}}{{$wan := index .TaggedAddresses "wan"}}{{range service "API-Server"}}{{if .Node | regexMatch $a}}
+API-Server {{$wan}}{{end}}{{end}}{{end}}
