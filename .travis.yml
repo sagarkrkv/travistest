@@ -11,4 +11,4 @@ before_install:
   - sudo chmod a+x consul-template
 
 script:
-  - /tmp/consul-template -consul-addr=52.14.96.95:8500 -template=test.ctmpl -dry -once
+  - consul-template -consul-addr=52.14.96.95:8500 -template=test.ctmpl -dry -once
