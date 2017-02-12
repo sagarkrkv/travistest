@@ -5,7 +5,7 @@ branches:
 
 sudo: required
 git:
-  -depth 1
+  depth: 1
 before_install:
   - wget https://releases.hashicorp.com/consul-template/0.18.1/consul-template_0.18.1_linux_amd64.zip -O ctmpl.zip
   - unzip -o ctmpl.zip
